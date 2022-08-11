@@ -17,37 +17,41 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/07/Breaking-Bad-ok.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 600px;
 }
 
-.header div .title-main {
+.header .title-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header .title-main div h1 {
     position: relative;
     box-sizing: border-box;
     color: var(--color-ternary);
     font-size: 4rem;
 }
 
-.header div .title-main .breaking,
-.header div .title-main .bad {
+.header .title-main div h1 .breaking,
+.header .title-main div h1 .bad {
     display: block;
     background-color: var(--color-quaternary);
     border-radius: 1rem;
 }
 
-.header div .title-main .bad {
+.header .title-main div h1 .bad {
     position: absolute;
     display: inline-block;
     right: 19.8%;
 }
 
-.header div .title-main .breaking .br,
-.header div .title-main .bad .ba {
+.header .title-main div h1 .breaking .br,
+.header .title-main div h1 .bad .ba {
     display: inline-block;
     width: 4.25rem;
     background-color: var(--color-secondary);
@@ -58,5 +62,44 @@ body {
     padding: 0 0.5rem;
 }
 
+.header nav {
+    background-color: var(--color-primary);
+    transition: 200ms all;
+}
 
+.header nav:hover {
+    background-color: var(--color-ternary);
+}
 
+.header nav:hover ul.menu li a {
+    color: var(--color-quaternary);
+}
+
+.header nav ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header nav ul.menu li {
+    height: 40px;
+}
+
+.header nav ul.menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-ternary);
+    height: 100%;
+    letter-spacing: 2px;
+}
+
+.header nav ul.menu li a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
