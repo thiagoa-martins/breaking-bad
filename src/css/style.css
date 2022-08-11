@@ -1,0 +1,62 @@
+:root {
+    --color-primary: #063900;
+    --color-secondary: #4ca66e;
+    --color-ternary: #e3e5d9;
+    --color-quaternary: #071800;
+}
+
+html, 
+body {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-quaternary);
+    color: var(--color-ternary);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/07/Breaking-Bad-ok.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+}
+
+.header div .title-main {
+    position: relative;
+    box-sizing: border-box;
+    color: var(--color-ternary);
+    font-size: 4rem;
+}
+
+.header div .title-main .breaking,
+.header div .title-main .bad {
+    display: block;
+    background-color: var(--color-quaternary);
+    border-radius: 1rem;
+}
+
+.header div .title-main .bad {
+    position: absolute;
+    display: inline-block;
+    right: 19.8%;
+}
+
+.header div .title-main .breaking .br,
+.header div .title-main .bad .ba {
+    display: inline-block;
+    width: 4.25rem;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-ternary);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+
+
