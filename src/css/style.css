@@ -18,6 +18,14 @@ body {
     font-family: var(--font-primary);
 }
 
+.container {
+    padding: 0 2rem;
+}
+
+.word-bold {
+    font-weight: bold;
+}
+
 .header {
     background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/07/Breaking-Bad-ok.jpg');
     background-repeat: no-repeat;
@@ -88,6 +96,7 @@ body {
 }
 
 .header nav ul.menu li a {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,4 +116,22 @@ body {
 
 .header nav ul.menu li a .chemical-element {
     color: var(--color-secondary);
+}
+
+.about-the-serie {
+    margin-top: 6rem;
+    line-height: 25px;
+}
+
+.about-the-serie h2 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.about-the-serie p {
+    text-align: center;
+    font-size: 1.5rem;
 }
