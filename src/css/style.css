@@ -65,7 +65,7 @@ body {
 
 .header nav {
     background-color: var(--color-primary);
-    transition: 200ms all;
+    transition: 400ms all;
 }
 
 .header nav:hover {
@@ -103,4 +103,8 @@ body {
 .header nav ul.menu li a:hover {
     text-decoration: underline;
     color: var(--color-primary);
+}
+
+.header nav ul.menu li a .chemical-element {
+    color: var(--color-secondary);
 }
