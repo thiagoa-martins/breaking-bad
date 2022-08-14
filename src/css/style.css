@@ -39,25 +39,20 @@ body {
     color: var(--color-ternary);
 }
 
-.header {
-    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/07/Breaking-Bad-ok.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 600px;
+
+.header .front-cover {
+    width: 100%;
 }
 
 .header .title-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    text-align: center;
+    padding: 8rem 0 5rem;
 }
 
 .header .title-main div h1 {
-    position: relative;
     box-sizing: border-box;
     color: var(--color-ternary);
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .header .title-main div h1 .breaking,
@@ -68,15 +63,14 @@ body {
 }
 
 .header .title-main div h1 .bad {
-    position: absolute;
     display: inline-block;
-    right: 25.8%;
+    margin-left: 1.2rem;
 }
 
 .header .title-main div h1 .breaking .br,
 .header .title-main div h1 .bad .ba {
     display: inline-block;
-    width: 5.5rem;
+    width: 7rem;
     background-color: var(--color-secondary);
     border: 1px solid var(--color-ternary);
     text-align: center;
@@ -87,6 +81,8 @@ body {
 .header nav {
     background-color: var(--color-primary);
     transition: 400ms all;
+    position: fixed;
+    width: 100%;
 }
 
 .header nav:hover {
@@ -130,11 +126,6 @@ body {
 
 .header nav ul.menu li a .chemical-element {
     color: var(--color-secondary);
-}
-
-.about-the-serie {
-    margin-top: 6rem;
-    line-height: 30px;
 }
 
 .about-the-serie p {
@@ -263,4 +254,15 @@ body {
 .footer .author a {
     text-decoration: none;
     color: var(--color-secondary);
+}
+
+@media screen and (max-width: 900px) {
+    .main-characters div.cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-characters .card {
+        width: 100%;
+    }
 }
