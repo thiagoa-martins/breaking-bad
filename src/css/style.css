@@ -137,8 +137,20 @@ body {
 }
 
 .about-the-serie p {
-    text-align: center;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.about-the-serie .summary {
+    margin-bottom: 5rem;
+}
+
+.about-the-serie .other-information {
+    margin-bottom: 1rem;
+}
+
+.about-the-serie .other-information span {
+    color: var(--color-secondary);
 }
 
 .main-characters div.cards {
@@ -169,7 +181,7 @@ body {
 
 .main-characters .card h3 {
     margin: 2rem 0 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .main-characters .card h3,
@@ -181,6 +193,7 @@ body {
 .main-characters .card .nickname,
 .main-characters .card .occupation {
     color: var(--color-secondary);
+    font-size: 1.5rem;
 }
 
 .main-characters .card h4 {
@@ -189,5 +202,6 @@ body {
 
 .main-characters .card span {
     margin-bottom: 1rem;
-    line-height: 20px;
+    line-height: 30px;
+    font-size: 1.5rem;
 }
