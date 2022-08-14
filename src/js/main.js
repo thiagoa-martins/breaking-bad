@@ -16,7 +16,7 @@ const dataCharacters = data => {
 
 const showCharacters = response => {
     const array = response;
-    const numberOfCharacters = 7;
+    const numberOfCharacters = 8;
 
     let card = "";
 
@@ -28,13 +28,17 @@ const showCharacters = response => {
 
         card += `
             <div class="card">
-                <img src="${img}" alt="#">
+                <img src="${img}" alt="${name}">
                     
                 <h3>${name}</h3>
 
-                <h4>apelido: ${nickname}</h4>
+                <h4 class="nickname">apelido:</h4>
 
-                <span>ocupação: ${occupation}</span>
+                <span>${nickname}</span>
+
+                <span class="occupation">ocupação:</span>
+
+                <span>${occupation}</span>
             </div>  
         `;
     }
