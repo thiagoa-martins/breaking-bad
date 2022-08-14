@@ -211,12 +211,12 @@ body {
 }
 
 .where-to-watch p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .where-to-watch .watch {
     display: inline-block;
-    margin-top: 3rem;
     background-color: #4ca66e;
     padding: 1.5rem 3rem;
     border-radius: 1rem;
