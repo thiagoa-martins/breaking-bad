@@ -10,6 +10,7 @@ html,
 body {
     font-size: 16px;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -219,7 +220,8 @@ body {
     display: inline-block;
     background-color: #4ca66e;
     padding: 1.5rem 3rem;
-    border-radius: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
     border: none;
     color: var(--color-quaternary);
     text-decoration: none;
@@ -232,4 +234,33 @@ body {
 
 .where-to-watch .watch:hover {
     filter: brightness(1.5);
+}
+
+.footer {
+    margin-top: 2rem;
+}
+
+.footer .contact {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 1rem 0;
+}
+
+.footer .contact li .social img,
+.footer .contact li .social svg {
+    width: 2rem;
+}
+
+.footer .author {
+    background-color: var(--color-primary);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.footer .author a {
+    text-decoration: none;
+    color: var(--color-secondary);
 }
