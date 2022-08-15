@@ -246,6 +246,12 @@ body {
 .footer .contact li .social img,
 .footer .contact li .social svg {
     width: 2rem;
+    transition: 200ms all;
+}
+
+.footer .contact li .social img:hover,
+.footer .contact li .social svg:hover {
+    transform: scale(1.3);
 }
 
 .footer .author {
