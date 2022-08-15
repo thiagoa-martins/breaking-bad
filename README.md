@@ -129,4 +129,4 @@ const showCharacters = response => {
 ## Autor
 
 - Github - [thiagoa-martins](https://github.com/thiagoa-martins)
-- Linkedin - [thiagoa_martins](https://www.linkedin.com/in/thiagoa-martins/)
+- Linkedin - [thiagoa-martins](https://www.linkedin.com/in/thiagoa-martins/)
