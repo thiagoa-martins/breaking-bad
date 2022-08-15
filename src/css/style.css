@@ -39,7 +39,6 @@ body {
     color: var(--color-ternary);
 }
 
-
 .header .front-cover {
     width: 100%;
 }
@@ -52,7 +51,7 @@ body {
 .header .title-main div h1 {
     box-sizing: border-box;
     color: var(--color-ternary);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .header .title-main div h1 .breaking,
@@ -64,7 +63,7 @@ body {
 
 .header .title-main div h1 .bad {
     display: inline-block;
-    margin-left: 1.2rem;
+    margin-left: 3.8rem;
 }
 
 .header .title-main div h1 .breaking .br,
@@ -87,6 +86,11 @@ body {
 
 .header nav:hover {
     background-color: var(--color-ternary);
+}
+
+.header nav .hamburger,
+.header nav .menu-mobile {
+    display: none;
 }
 
 .header nav:hover ul.menu li a {
@@ -253,4 +257,65 @@ body {
 .footer .author a {
     text-decoration: none;
     color: var(--color-secondary);
+}
+
+@media screen and (max-width: 900px) {
+    .header nav {
+        padding: 1rem 0;
+    }
+
+    .header nav:hover {
+        background-color: var(--color-primary);
+    }
+
+    .header nav ul.menu li a {
+        display: none;
+    }
+
+    .header nav .hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 27%;
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .header nav .menu-mobile {
+        display: none;
+        transition: 200ms all;
+    }
+
+    .header nav .menu-mobile.show {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: var(--color-ternary);
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .header nav .menu-mobile nav {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .header nav .menu-mobile nav ul.menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav .menu-mobile nav ul.menu li a {
+        display: block;
+        color: var(--color-ternary);
+    }
+    
+    .header nav .menu-mobile nav ul.menu li a:hover {
+        color: var(--color-secondary);
+    }
+
+    .header nav .menu-mobile nav ul.menu li a:hover .chemical-element {
+        color: var(--color-ternary);
+    }
 }

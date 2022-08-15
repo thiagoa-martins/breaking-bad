@@ -1,4 +1,6 @@
 const divCards = document.querySelector("#cards");
+const divMobile = document.querySelector("#menuMobile");
+const buttonHamburger = document.querySelector("#hamburger");
 
 const queryAPI = () => {
     return fetch("https://www.breakingbadapi.com/api/");
@@ -49,3 +51,7 @@ const showCharacters = response => {
 queryAPI() 
  .then(convertDataJSON)
  .then(dataCharacters)
+
+buttonHamburger.addEventListener("click", () => {
+    divMobile.classList.toggle("show");
+});
