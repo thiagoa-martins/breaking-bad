@@ -217,8 +217,8 @@ body {
 
 .where-to-watch .watch {
     display: inline-block;
-    background-color: #4ca66e;
-    padding: 1.5rem 3rem;
+    background-color: var(--color-secondary);
+    padding: 1.5rem 2rem;
     margin-bottom: 3rem;
     border-radius: 0.5rem;
     border: none;
@@ -266,7 +266,7 @@ body {
 }
 
 .footer .author a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--color-secondary);
 }
 
