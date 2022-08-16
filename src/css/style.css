@@ -230,7 +230,7 @@ body {
 .where-to-watch .watch {
     display: inline-block;
     background-color: var(--color-secondary);
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     border-radius: 0.5rem;
     border: none;
