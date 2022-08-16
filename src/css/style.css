@@ -33,6 +33,7 @@ body {
     font-weight: bold;
     text-align: center;
     color: var(--color-secondary);
+    line-height: 3rem;
 }
 
 .chemical-element-white {
@@ -68,7 +69,6 @@ body {
 .header .title-main div h1 .breaking,
 .header .title-main div h1 .bad {
     display: block;
-    /* background-color: var(--color-quaternary); */
     border-radius: 1rem;
 }
 
@@ -144,6 +144,10 @@ body {
     color: var(--color-secondary);
 }
 
+.about-the-serie {
+    line-height: 2rem;
+}
+
 .about-the-serie p {
     font-size: 1.5rem;
     text-align: center;
@@ -179,6 +183,7 @@ body {
     border-radius: 0.5rem 0.5rem 0 0;
     text-transform: capitalize;
     text-align: center;
+    line-height: 2rem;
 }
 
 .main-characters .card img {
@@ -209,12 +214,12 @@ body {
 
 .main-characters .card span {
     margin-bottom: 1rem;
-    line-height: 30px;
     font-size: 1.5rem;
 }
 
 .where-to-watch {
     text-align: center;
+    line-height: 2rem;
 }
 
 .where-to-watch p {
