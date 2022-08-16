@@ -39,6 +39,13 @@ body {
     color: var(--color-ternary);
 }
 
+.line {
+    border: none;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin-top: 2rem;
+}
+
 .header {
     background-color: var(--color-primary);
 }
