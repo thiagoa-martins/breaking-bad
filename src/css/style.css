@@ -90,14 +90,14 @@ body {
 
 .header nav {
     background-color: var(--color-primary);
-    transition: 400ms all;
+    transition: 100ms background-color;
     position: fixed;
     width: 100%;
     box-shadow: 0 1px 10px var(--color-quaternary);
 }
 
 .header nav:hover {
-    background-color: var(--color-ternary);
+    background-color: var(--color-quaternary);
 }
 
 .header nav .hamburger,
@@ -106,7 +106,11 @@ body {
 }
 
 .header nav:hover ul.menu li a {
-    color: var(--color-quaternary);
+    color: var(--color-secondary);
+}
+
+.header nav:hover ul.menu li a .chemical-element {
+    color: var(--color-ternary);
 }
 
 .header nav ul.menu {
@@ -117,31 +121,32 @@ body {
     flex-wrap: wrap;
 }
 
-.header nav ul.menu li {
-    margin: 1rem;
-}
-
 .header nav ul.menu li a {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--color-ternary);
     height: 100%;
     letter-spacing: 2px;
+    padding: 0.8rem 0;
 }
 
 .header nav ul.menu li a:hover {
-    text-decoration: underline;
-    color: var(--color-primary);
+    color: var(--color-ternary);
 }
 
 .header nav ul.menu li a .chemical-element {
     color: var(--color-secondary);
+    text-transform: capitalize;
+}
+
+.header nav ul.menu li a:hover .chemical-element {
+    color: var(--color-secondary);
+
 }
 
 .about-the-serie {
@@ -297,7 +302,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .header nav {
-        padding: 1rem 0;
+        padding: 1.5rem 0;
     }
 
     .header nav:hover {
@@ -311,7 +316,7 @@ body {
     .header nav .hamburger {
         display: inline-block;
         position: absolute;
-        top: 27%;
+        top: 19%;
         right: 1rem;
         font-size: 2rem;
         cursor: pointer;
@@ -346,8 +351,12 @@ body {
         display: block;
         color: var(--color-ternary);
     }
-    
+
     .header nav .menu-mobile nav ul.menu li a:hover {
+        color: var(--color-secondary);
+    }
+    
+    .header nav .menu-mobile nav ul.menu li a .chemical-element {
         color: var(--color-secondary);
     }
 
